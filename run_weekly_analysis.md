@@ -86,38 +86,47 @@ Structure the analysis with:
 - Bold text for key information
 - Professional, shareable format
 
-### Step 7: Update Tracking Document
+### Step 7: Update Tracking Document (AUTOMATIC)
 
-After completing the analysis, read the file at `/Users/jonasblasques/Dev/AI/weekly_bitcoin_analysis/analysis_tracking.md` and provide the user with the specific updates needed for:
+**IMPORTANT: This step must be performed automatically by the AI. Do NOT ask the user to manually update the tracking file.**
 
-1. **Current Variables Section**: Show the new values
-2. **Prediction History Log**: Show the new table row to add
-3. **Allocation Recommendation Log**: Show the new table row to add
-4. **Key Events Timeline**: List significant events from this week
-5. **Weekly Milestones**: Update status of checkboxes
+After completing the analysis:
+
+1. **Read** the tracking file: `analysis_tracking.md`
+2. **Automatically update** the following sections using the Edit tool:
+   - **Current Variables Section**: Update with new week's values
+   - **Prediction History Log**: Add new table row
+   - **Allocation Recommendation Log**: Add new table row
+   - **Execution Log**: Add new table row
+   - **Key Events Timeline**: Add significant events from this week
+   - **Weekly Milestones**: Update checkboxes (mark completed items with [x])
+   - **Week-Over-Week Changes Log**: Fill in the current week's section with changes and new data
+   - **Final Prediction Assessment**: Update target peak information
+
+3. **Confirm** to the user that tracking updates have been applied automatically
 
 ### Step 8: Save the Analysis
 
-Instruct the user to save the analysis as `analysisMMDDYYYY.md` with today's date.
+Save the analysis automatically as `analysisMMDDYYYY.md` using the Write tool with today's date.
 
 ---
 
 ## Summary of What YOU (AI) Will Do:
-✅ Search web for current Bitcoin price, on-chain data, ETF flows, macro data, sentiment  
-✅ Calculate days post-halving  
-✅ Ask user for portfolio-specific variables  
-✅ Ask user for previous week's predictions  
-✅ Read prompt template to understand requirements  
-✅ Generate complete analysis with portfolio recommendation  
-✅ Provide tracking log updates for user to copy  
-✅ Guide user on saving the file  
+✅ Search web for current Bitcoin price, on-chain data, ETF flows, macro data, sentiment
+✅ Calculate days post-halving
+✅ Ask user for portfolio-specific variables
+✅ Ask user for previous week's predictions
+✅ Read prompt template to understand requirements
+✅ Generate complete analysis with portfolio recommendation
+✅ **AUTOMATICALLY update `analysis_tracking.md` using Edit tool (DO NOT ask user to do this manually)**
+✅ **AUTOMATICALLY save analysis as `analysisMMDDYYYY.md` using Write tool**
+✅ Confirm completion to user
 
 ## Summary of What USER Will Do:
-✅ Paste this prompt into AI  
-✅ Provide portfolio allocation percentages and last action  
-✅ Provide previous week's prediction (if available)  
-✅ Copy tracking log updates to `analysis_tracking.md`  
-✅ Save analysis output as `analysisMMDDYYYY.md`  
+✅ Paste this prompt into AI
+✅ Provide portfolio allocation percentages and last action
+✅ Provide previous week's prediction (if available)
+✅ Review the completed analysis
 ✅ (Optional) Execute portfolio recommendation  
 
 ---
