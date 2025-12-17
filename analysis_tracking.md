@@ -2,21 +2,21 @@
 
 ## Current Variables (Update Weekly)
 
-### Week of December 10, 2025
+### Week of December 17, 2025
 
 #### Market Variables
-- **{{CURRENT_DATE}}**: December 10, 2025
-- **{{CURRENT_PRICE}}**: $93,500 (range: $93,000-$94,300)
-- **{{DAYS_POST_HALVING}}**: 600 (Halving: April 20, 2024)
-- **{{PREVIOUS_PEAK_DATE}}**: Sept 15, 2026 (from Dec 4 analysis)
-- **{{PREVIOUS_PEAK_PRICE}}**: $165,000 (from Dec 4 analysis)
+- **{{CURRENT_DATE}}**: December 17, 2025
+- **{{CURRENT_PRICE}}**: $86,780
+- **{{DAYS_POST_HALVING}}**: 607 (Halving: April 20, 2024)
+- **{{PREVIOUS_PEAK_DATE}}**: Sept 20, 2026 (from Dec 10 analysis)
+- **{{PREVIOUS_PEAK_PRICE}}**: $168,000 (from Dec 10 analysis)
 
 #### Portfolio Variables
-- **{{CURRENT_BTC_PERCENTAGE}}**: 55%
-- **{{CURRENT_USDT_PERCENTAGE}}**: 45%
+- **{{CURRENT_BTC_PERCENTAGE}}**: 36%
+- **{{CURRENT_USDT_PERCENTAGE}}**: 64%
 - **{{PORTFOLIO_VALUE}}**: [Optional: Enter total value, e.g., $10,000]
-- **{{LAST_ACTION}}**: HOLD
-- **{{LAST_REBALANCE_DATE}}**: December 4, 2025
+- **{{LAST_ACTION}}**: DCA buy 1.25%
+- **{{LAST_REBALANCE_DATE}}**: December 10, 2025
 
 ---
 
@@ -26,6 +26,7 @@
 |------------|---------------------|-----------------|------------|--------|-------|
 | Dec 4, 2025| Sept 15, 2026 (±3w) | $165K ($150-180K)| 55%       | Active | First baseline prediction |
 | Dec 10, 2025| Sept 20, 2026 (±3w) | $168K ($150-186K)| 58%       | Active | +$3K price, +5 days, +3% confidence vs Dec 4 |
+| Dec 17, 2025| Sept 25, 2026 (±3w) | $165K ($147-183K)| 52%       | Active | -$3K price, +5 days, -6% confidence vs Dec 10; $87K support broken |
 
 ## Allocation Recommendation Log
 
@@ -33,13 +34,15 @@
 |------------|------------|--------------|---------------|---------------------------------------|
 | Dec 4, 2025| HOLD       | 60%          | 40%           | Baseline; await confirmation signals. |
 | Dec 10, 2025| HOLD       | 55%          | 45%           | Mid-cycle consolidation; whale accumulation strong but ETF outflows persist. Continue DCA. |
+| Dec 17, 2025| HOLD       | 36%          | 64%           | Defensive; $87K broken, $80K critical test ahead. Pause DCA until resolution. User allocation already conservative. |
 
 ## Execution Log
 
 | Date       | Planned Action | Actual Action | BTC % After | USDT % After | Execution Price | Notes                     |
 |------------|----------------|---------------|-------------|--------------|-----------------|---------------------------|
 | Dec 4, 2025| HOLD           | HOLD          | 60%         | 40%          | $93,000         | Initial baseline position |
-| Dec 10, 2025| HOLD           | HOLD          | 55%         | 45%          | $93,500         | Maintained allocation; continued weekly DCA |
+| Dec 10, 2025| HOLD           | DCA 1.25%     | 55%         | 45%          | $93,500         | Continued weekly DCA |
+| Dec 17, 2025| HOLD (Pause DCA)| HOLD         | 36%         | 64%          | $86,780         | Paused DCA; awaiting $80K test. User allocation more conservative than recommendation. |
 
 ---
 
@@ -49,6 +52,8 @@
 - **Dec 4**: Baseline prediction established
 - **Dec 9-10**: FOMC meeting - 25bps cut confirmed (97% probability realized)
 - **Dec 10**: Weekly analysis - whale accumulation 47.6K BTC in Dec, MVRV 2.1, Fear & Greed 22-26, BlackRock IBIT 6 consecutive weeks outflows ($2.7B total)
+- **Dec 10-17**: BTC dropped 7.2% from $93,500 to $86,780; broke $87K support level
+- **Dec 17**: Weekly analysis - bear case probability increased to 25% (from 15%); $80K critical test imminent. Fear & Greed estimated 15-20 (deeper extreme fear). Recommendation: HOLD, pause DCA.
 
 ### Q1 2026
 - **To be tracked**: ETF flows, Fed decisions, regulatory developments
@@ -66,10 +71,12 @@
 ### Critical Thresholds to Monitor
 
 #### Short-term (Next 4 weeks)
+- [ ] BTC holds $80K support (CRITICAL - make or break)
+- [ ] BTC reclaims $87K (broken support recovery)
 - [ ] BTC reclaims $97,100 (bullish confirmation)
 - [x] FOMC decision (Dec 9-10) - 25bps cut confirmed
-- [ ] ETF flows turn positive >$200M/day sustained
-- [ ] Fear & Greed Index rises above 35 (exit extreme fear)
+- [ ] ETF flows turn positive or slow to <$100M/week
+- [ ] Fear & Greed Index bottoms and begins recovery
 
 #### Medium-term (Q1 2026)
 - [ ] BTC reclaims $100K by March 2026
@@ -123,18 +130,31 @@
 - Long-term holders now control 74% of supply (up from previous readings)
 
 ### Week of December 17, 2025
-*To be filled in next week*
 
 **Changes from last week:**
-- Prediction date: [Any change?]
-- Prediction price: [Any change?]
-- Confidence level: [Any change?]
+- Prediction date: Sept 20 → Sept 25, 2026 (+5 days)
+- Prediction price: $168K → $165K (-$3K, -1.8%)
+- Confidence level: 58% → 52% (-6%)
 
 **New data that influenced changes:**
-- [List key data points]
+- BTC price dropped 7.2% from $93,500 to $86,780 (broke $87K support)
+- MVRV declined to ~1.85-1.95 (from 2.1) due to price drop
+- Fear & Greed Index estimated 15-20 (deeper extreme fear, from 22-26)
+- Post-FOMC "sell the news" reaction confirmed
+- Year-end tax-loss harvesting and institutional rebalancing intensifying
+- Technical breakdown: Sequential support failures ($92K → $87K)
+- Bear case probability increased from 15% to 25% (per framework)
+- $80K support now critical test (7% below current price)
 
 **Key events this week:**
-- [List significant events]
+- Dec 10-11: Post-FOMC selling pressure
+- Dec 12-17: Accelerated decline breaking key support levels
+- $87K support broken (triggered bear case probability increase to 25%)
+- Year-end dynamics: Tax-loss harvesting peak, low liquidity
+- Next critical level: $80,400 (November low, make-or-break support)
+
+### Week of December 24, 2025
+*To be filled in next week*
 
 ---
 
@@ -149,7 +169,8 @@
 
 ### Final Prediction Assessment
 - **Target Peak (Dec 4)**: September 15, 2026 at $165K
-- **Target Peak (Dec 10)**: September 20, 2026 at $168K (current)
+- **Target Peak (Dec 10)**: September 20, 2026 at $168K
+- **Target Peak (Dec 17)**: September 25, 2026 at $165K (current)
   - **Actual Peak**: TBD
   - **Date Error**: TBD
   - **Price Error**: TBD
