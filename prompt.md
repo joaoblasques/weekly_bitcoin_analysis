@@ -106,9 +106,83 @@ Scenario Playbook
 - Bear Case Emerging: Suggested BTC %
 
 Risk Parameters
-- De-risk trigger (stop-style): Price/condition to cut BTC exposure
-- Take-profit zones: Levels to scale down BTC
-- Rebalancing cadence: Weekly by default; allow event-driven adjustments
+
+**Rebalancing Strategy (Adaptive/Hybrid Approach)**
+
+The AI should recommend the appropriate rebalancing frequency based on current market conditions. Use this decision framework:
+
+**1. EVENT-DRIVEN Mode (Highest Priority)**
+Use when market is at critical inflection points:
+- **Triggers:**
+  - Price testing major support/resistance (e.g., $80K, $100K, previous ATH)
+  - Breaking above/below key technical levels with volume
+  - BTC moves >10% in a single week
+  - Allocation drifts >15% from target (e.g., target 50%, actual 65%+)
+  - Major macro events (Fed emergency actions, Strategic Reserve approval, etc.)
+  - Bear case or Bull case probability rises above 35%
+
+- **Execution:** Only rebalance when specific triggers are hit; ignore weekly/monthly schedule
+- **Rationale:** Critical moments require immediate response; avoid over-trading during noise
+- **Example:** "REBALANCING MODE: Event-Driven. Triggers: (1) Break below $80K → reduce 15%, (2) Reclaim $92K → add 10%. Otherwise HOLD."
+
+**2. MONTHLY Mode (Default Baseline)**
+Use during normal market conditions:
+- **Conditions:**
+  - Market trending steadily (no critical tests)
+  - Volatility moderate (<5% weekly moves)
+  - Base case probability >55%
+  - No imminent major support/resistance tests
+  - Portfolio allocation within ±10% of target
+
+- **Execution:** Review weekly analysis, but only rebalance on first analysis of each month
+- **Rationale:** Minimizes fees, taxes, and emotional trading while maintaining discipline
+- **Example:** "REBALANCING MODE: Monthly (next rebalance: first week of [Month]). This week: HOLD. Accumulate analysis; reassess end of month."
+
+**3. WEEKLY Mode (High-Activity Periods)**
+Use during high-volatility or major trend changes:
+- **Conditions:**
+  - High volatility (>8% weekly moves consistently)
+  - Rapid trend development (new bull/bear leg forming)
+  - Multiple triggers happening in short period
+  - Post-major-event positioning (e.g., first 4 weeks after $80K break)
+  - Base case confidence rapidly changing (±5%+ per week)
+
+- **Execution:** Rebalance every week based on latest analysis
+- **Rationale:** Fast-moving markets require active management to capture opportunities and manage risk
+- **Example:** "REBALANCING MODE: Weekly (active management). Execute this week's recommendation: BUY +10%. Review again in 7 days."
+
+**Adaptive Decision Tree (for AI to follow each week):**
+
+```
+1. Is there a critical support/resistance test within 10%?
+   → YES: Event-Driven Mode
+   → NO: Continue to 2
+
+2. Did BTC move >10% this week OR is volatility >8%?
+   → YES: Weekly Mode
+   → NO: Continue to 3
+
+3. Is allocation drift >15% from target?
+   → YES: Event-Driven Mode (trigger = rebalance now)
+   → NO: Continue to 4
+
+4. Is base case probability >55% AND market trending steadily?
+   → YES: Monthly Mode (default)
+   → NO: Weekly Mode
+```
+
+**AI Output Requirements:**
+Each week, clearly state:
+1. **Current Rebalancing Mode:** [Event-Driven / Monthly / Weekly]
+2. **Rationale:** Why this mode is appropriate this week
+3. **Next Rebalancing Date:** When user should next execute trades
+4. **Triggers (if Event-Driven):** Specific conditions that would cause immediate rebalance
+5. **Mode Change Conditions:** What would shift to a different mode
+
+**Additional Risk Parameters:**
+- **De-risk triggers (stop-style):** Price/condition to immediately cut BTC exposure (e.g., < $80K = reduce 15%)
+- **Take-profit zones:** Levels to scale down BTC (e.g., $140K = trim 10%, $160K = trim 15%)
+- **Emergency override:** If base case confidence drops below 40%, immediately recommend defensive positioning regardless of mode
 
 Example Output
 ```

@@ -73,51 +73,93 @@ Risk: If < $80K reduce to 50%; > $120K trim to 60%; > $150K trim to 40%.
 
 ## 🚀 Quick Start
 
-### First-Time Setup (10 minutes)
+> **👉 New here? Read `START_HERE.md` for a 2-minute quick start guide!**
 
-1. **Review the system files**:
-   - `README.md` (this file) - understand the system
-   - `prompt.md` - review the AI prompt template
-   - `analysis_tracking.md` - familiarize yourself with tracking structure
-   - `weekly_workflow.md` - understand the weekly process
+### First-Time Setup (5 minutes)
 
-2. **Set your initial portfolio allocation** in `analysis_tracking.md`:
-   ```markdown
-   #### Portfolio Variables
-   - {{CURRENT_BTC_PERCENTAGE}}: 60%
-   - {{CURRENT_USDT_PERCENTAGE}}: 40%
-   - {{PORTFOLIO_VALUE}}: $10,000 (optional)
-   ```
+1. **Understand the system**:
+   - This system automates weekly Bitcoin market analysis using AI
+   - You just copy one file (`run_weekly_analysis.md`) into an AI assistant
+   - AI does all the work: gathers data, analyzes, updates tracking
+   - Takes 10-15 minutes per week
 
-3. **Baseline analysis already completed**: `analysis04122025.md`
+2. **Your baseline analysis is complete**: You have 3 weeks of data (Dec 4, 10, 17)
 
-### Weekly Execution (10-15 minutes with automation)
+3. **You're ready to run weekly analyses!**
 
-**🚀 RECOMMENDED: Automated Workflow**
+### Weekly Execution (10 minutes - Fully Automated)
+
+Every Wednesday:
 
 1. **Open** `run_weekly_analysis.md`
-2. **Copy & paste** entire file into your AI assistant (Claude, ChatGPT, Gemini, etc.)
-3. **Answer** the AI's questions about your portfolio (current allocation, last action)
-4. **Receive** complete analysis with portfolio recommendation
-5. **Copy** the tracking updates AI provides into `analysis_tracking.md`
-6. **Save** analysis as `analysisMMDDYYYY.md`
-7. **(Optional)** Execute portfolio recommendation
+2. **Copy & paste** entire file into AI assistant (Claude, ChatGPT, Gemini)
+3. **Answer** AI's questions:
+   - Current portfolio allocation (e.g., "36% BTC, 64% USDT")
+   - Last action taken (e.g., "DCA buy 1.25%")
+   - Current BTC price (if AI can't fetch it)
+4. **Done!** AI automatically:
+   - ✅ Gathers all market data
+   - ✅ Generates complete analysis
+   - ✅ Updates `analysis_tracking.md`
+   - ✅ Saves `analysisMMDDYYYY.md`
+   - ✅ Provides portfolio recommendation
 
-The AI will:
-- ✅ Search for current market data
-- ✅ Calculate all variables
-- ✅ Read your prompt template
-- ✅ Generate complete analysis
-- ✅ Provide tracking updates
+**That's it!** The entire process takes 10 minutes.
 
-You only:
-- ✅ Provide portfolio info (BTC %, USDT %, last action)
-- ✅ Copy updates to tracking file
-- ✅ Save the analysis
+---
 
-**Alternative: Manual Workflow**
+## 📁 File Structure (Simplified)
 
-If you prefer full control, follow `weekly_workflow.md` for step-by-step manual process.
+```
+weekly_bitcoin_analysis/
+├── START_HERE.md                ← 🚀 Read this first!
+├── run_weekly_analysis.md       ← Your main file (copy/paste weekly)
+├── analysis_tracking.md         ← Auto-updated by AI
+├── prompt.md                    ← Backend (AI reads this, you don't touch)
+├── README.md                    ← This file (full documentation)
+├── QUICK_START.md              ← Quick reference guide
+├── WARP.md                      ← Repository guidance
+├── analysis04122025.md          ← Week 1 analysis
+├── analysis12102025.md          ← Week 2 analysis
+├── analysis12172025.md          ← Week 3 analysis (latest)
+└── archive/
+    └── weekly_workflow.md       ← Manual process (for advanced users only)
+```
+
+---
+
+## 🎯 Which File Do I Use?
+
+| File | When to Use | Who It's For |
+|------|-------------|--------------|
+| **START_HERE.md** | First time setup | Everyone (start here!) |
+| **run_weekly_analysis.md** | Every Wednesday | Everyone (your main file) |
+| **analysis_tracking.md** | View only | Auto-updated (review history) |
+| **README.md** | Reference | Full documentation |
+| **prompt.md** | Never | Backend (AI uses this) |
+| **archive/weekly_workflow.md** | Optional | Manual control enthusiasts |
+
+---
+
+## 🤖 How It Works (Behind the Scenes)
+
+```
+You → Copy run_weekly_analysis.md
+        ↓
+    Paste into AI
+        ↓
+    AI reads prompt.md (automatically)
+        ↓
+    AI gathers market data
+        ↓
+    AI generates analysis
+        ↓
+    AI updates tracking files
+        ↓
+    Done!
+```
+
+You never need to touch `prompt.md` - it's the "instruction manual" the AI reads automatically.
 
 ---
 
@@ -326,22 +368,37 @@ This is a personal framework. Adapt it to your needs:
 8. ✅ Quality check and set reminders
 
 ### Key Files Quick Access
-- **🚀 To run weekly analysis**: `run_weekly_analysis.md` (paste into AI)
-- **To update after analysis**: `analysis_tracking.md` (copy AI's updates here)
-- **For manual workflow**: `weekly_workflow.md`
-- **For system overview**: `README.md` (this file)
-- **Template reference**: `prompt.md` (advanced users)
+- **🚀 NEW? START HERE**: `START_HERE.md` (2-minute guide)
+- **📋 Weekly Analysis**: `run_weekly_analysis.md` (copy/paste to AI every Wednesday)
+- **📊 View History**: `analysis_tracking.md` (auto-updated by AI)
+- **📖 Full Docs**: `README.md` (this file)
+- **⚙️ Backend**: `prompt.md` (don't touch - AI uses this)
+- **📦 Archive**: `archive/weekly_workflow.md` (manual process - skip unless you want full control)
 
 ---
 
-**Ready to start?** 
+---
 
-**Next Wednesday:**
+## 🎉 You're All Set!
+
+**Next Wednesday (December 24, 2025):**
 1. Open `run_weekly_analysis.md`
-2. Copy the entire file
-3. Paste into your AI assistant (Claude, ChatGPT, Gemini, etc.)
-4. Let the AI do the work! 🤖
+2. Copy entire file (Cmd+A, Cmd+C)
+3. Paste into AI assistant
+4. Answer 3 questions
+5. Done in 10 minutes!
 
-**The AI will gather data, generate analysis, and provide portfolio recommendations - you just answer a few questions about your portfolio!**
+**💡 Pro Tip:** Set a weekly calendar reminder for every Wednesday at 10am with the title "Bitcoin Analysis - Copy run_weekly_analysis.md"
 
-**Good luck with your Bitcoin analysis and portfolio management journey!** 🚀
+---
+
+## 📚 Additional Resources
+
+- **START_HERE.md** - Quick 2-minute guide for new users
+- **QUICK_START.md** - Fast reference
+- **WARP.md** - Repository guidance for developers
+- **archive/** - Old manual workflows (advanced users only)
+
+---
+
+**The AI handles everything. You just copy/paste weekly. Simple!** 🚀
