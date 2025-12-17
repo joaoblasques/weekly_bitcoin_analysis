@@ -24,3 +24,6 @@ Temporary Items
 
 # Personal data (optional - uncomment if you don't want to share portfolio details)
 # analysis_tracking.md
+
+# Claude Code internal settings
+.claude/
