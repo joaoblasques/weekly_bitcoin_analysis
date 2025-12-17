@@ -23,7 +23,7 @@ weekly_bitcoin_analysis/
 ├── prompt.md                    # AI prompt template reference (for advanced users)
 ├── analysis_tracking.md         # Variables, logs, and milestones (you update this)
 ├── weekly_workflow.md           # Manual step-by-step guide (alternative to automation)
-├── analysis12042025.md          # Weekly analysis outputs (dated)
+├── analysis04122025.md          # Weekly analysis outputs (dated, format: DDMMYYYY)
 └── ...                          # Additional weekly analyses
 ```
 
@@ -108,7 +108,7 @@ Every Wednesday:
    - ✅ Gathers all market data
    - ✅ Generates complete analysis
    - ✅ Updates `analysis_tracking.md`
-   - ✅ Saves `analysisMMDDYYYY.md`
+   - ✅ Saves `analysisDDMMYYYY.md`
    - ✅ Provides portfolio recommendation
 
 **That's it!** The entire process takes 10 minutes.
@@ -125,9 +125,9 @@ weekly_bitcoin_analysis/
 ├── prompt.md                    ← Backend (AI reads this, you don't touch)
 ├── README.md                    ← This file (full documentation)
 ├── WARP.md                      ← Repository guidance
-├── analysis04122025.md          ← Week 1 analysis
-├── analysis12102025.md          ← Week 2 analysis
-├── analysis12172025.md          ← Week 3 analysis (latest)
+├── analysis04122025.md          ← Week 1 (04 Dec 2025)
+├── analysis10122025.md          ← Week 2 (10 Dec 2025)
+├── analysis17122025.md          ← Week 3 (17 Dec 2025 - latest)
 └── archive/
     └── weekly_workflow.md       ← Manual process (advanced users only)
 ```
@@ -360,7 +360,7 @@ This is a personal framework. Adapt it to your needs:
 3. ✅ Answer AI's questions (portfolio allocation, last action)
 4. ✅ Review AI's complete analysis
 5. ✅ Copy tracking updates to `analysis_tracking.md`
-6. ✅ Save analysis as `analysisMMDDYYYY.md`
+6. ✅ Save analysis as `analysisDDMMYYYY.md`
 7. ✅ (Optional) Execute portfolio recommendation
 
 ### Manual Weekly Checklist (Alternative)

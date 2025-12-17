@@ -107,7 +107,7 @@ After completing the analysis:
 
 ### Step 8: Save the Analysis
 
-Save the analysis automatically as `analysisMMDDYYYY.md` using the Write tool with today's date.
+Save the analysis automatically as `analysisDDMMYYYY.md` using the Write tool with today's date (format: DD=day, MM=month, YYYY=year).
 
 ---
 
@@ -119,7 +119,7 @@ Save the analysis automatically as `analysisMMDDYYYY.md` using the Write tool wi
 ✅ Read prompt template to understand requirements
 ✅ Generate complete analysis with portfolio recommendation
 ✅ **AUTOMATICALLY update `analysis_tracking.md` using Edit tool (DO NOT ask user to do this manually)**
-✅ **AUTOMATICALLY save analysis as `analysisMMDDYYYY.md` using Write tool**
+✅ **AUTOMATICALLY save analysis as `analysisDDMMYYYY.md` using Write tool (DD=day, MM=month, YYYY=year)**
 ✅ Confirm completion to user
 
 ## Summary of What USER Will Do:

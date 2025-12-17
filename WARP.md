@@ -15,7 +15,7 @@ This is a personal Bitcoin market analysis framework for conducting weekly peak 
 2. AI gathers current market data via web search
 3. AI reads `prompt.md` template for analysis requirements
 4. AI generates complete analysis with portfolio recommendations
-5. User saves output as `analysisMMDDYYYY.md` and updates `analysis_tracking.md`
+5. User saves output as `analysisDDMMYYYY.md` and updates `analysis_tracking.md`
 
 ### Secondary Workflow (Manual)
 1. User manually gathers market data
@@ -29,7 +29,7 @@ run_weekly_analysis.md    → Automated AI workflow (copy/paste to AI)
 prompt.md                 → Analysis template and requirements
 analysis_tracking.md      → Variables, logs, and milestones
 weekly_workflow.md        → Manual step-by-step guide
-analysisMMDDYYYY.md      → Weekly analysis outputs (dated)
+analysisDDMMYYYY.md      → Weekly analysis outputs (dated, format: DD=day, MM=month, YYYY=year)
 README.md                 → System documentation
 QUICK_START.md           → Quick reference guide
 ```
@@ -78,11 +78,11 @@ Files use `{{VARIABLE_NAME}}` placeholders that should be replaced with current 
 The Bitcoin halving occurred on **April 20, 2024**. All "days post-halving" calculations reference this date.
 
 ### File Naming Convention
-Weekly analyses use format: `analysisMMDDYYYY.md`
+Weekly analyses use format: `analysisDDMMYYYY.md`
+- `DD` = 2-digit day
 - `MM` = 2-digit month
-- `DD` = 2-digit day  
 - `YYYY` = 4-digit year
-- Example: `analysis12042025.md` for December 4, 2025
+- Example: `analysis04122025.md` for 04 December 2025
 
 ### Portfolio Allocation Framework
 - **Two-asset portfolio**: BTC and USDT only
@@ -123,7 +123,7 @@ After generating an analysis, update `analysis_tracking.md`:
 ### Reading Previous Analyses
 All past analyses are preserved as dated markdown files. To reference:
 ```bash
-cat analysis12042025.md  # View specific week
+cat analysis04122025.md  # View specific week (04 Dec 2025)
 ```
 
 ## Data Sources Used
@@ -165,7 +165,7 @@ When working with this repository:
 
 5. **Markdown Format**: All outputs should be well-formatted markdown with tables, headings, and bullet points
 
-6. **Preserve History**: Never overwrite existing `analysisMMDDYYYY.md` files—each week creates a new dated file
+6. **Preserve History**: Never overwrite existing `analysisDDMMYYYY.md` files—each week creates a new dated file
 
 7. **Scenario Analysis Required**: All predictions must include Base/Bull/Bear cases with probabilities
 

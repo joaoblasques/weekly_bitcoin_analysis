@@ -53,7 +53,7 @@ The AI handles everything else automatically.
 ✅ **Generates** complete market analysis
 ✅ **Provides** portfolio recommendation (BUY/SELL/HOLD)
 ✅ **Updates** `analysis_tracking.md` automatically
-✅ **Saves** analysis as `analysisMMDDYYYY.md`
+✅ **Saves** analysis as `analysisDDMMYYYY.md`
 
 **You just answer 3 questions. AI does the rest.**
 
@@ -105,7 +105,7 @@ Every week, you receive:
 
 **AI automatically:**
 - Updates `analysis_tracking.md` with new data
-- Saves analysis as `analysis12172025.md`
+- Saves analysis as `analysis17122025.md` (17 Dec 2025)
 
 **You:** Review the analysis. Done! ✅
 
@@ -127,7 +127,7 @@ Every week, you receive:
 
 ### Files AI Auto-Updates:
 - **`analysis_tracking.md`** ← View to see history
-- **`analysisMMDDYYYY.md`** ← Your weekly analyses (auto-saved)
+- **`analysisDDMMYYYY.md`** ← Your weekly analyses (auto-saved, format: DD=day, MM=month, YYYY=year)
 
 ### Files You Never Touch:
 - **`prompt.md`** ← Backend (AI reads this automatically)

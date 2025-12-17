@@ -146,9 +146,9 @@ If anything is missing, ask follow-up questions to complete the analysis.
 
 ### Step 8: Save the Analysis
 
-1. **Create filename**: `analysisMMDDYYYY.md`
-   - Format: Month (2 digits), Day (2 digits), Year (4 digits)
-   - Example: `analysis12042025.md` for December 4, 2025
+1. **Create filename**: `analysisDDMMYYYY.md`
+   - Format: Day (2 digits), Month (2 digits), Year (4 digits)
+   - Example: `analysis04122025.md` for 04 December 2025
 
 2. **Save the file** in your working directory
 
@@ -381,7 +381,7 @@ Use this quick checklist each week:
 - [ ] Ask follow-up questions if needed
 
 ### Documentation
-- [ ] Save analysis as `analysisMMDDYYYY.md`
+- [ ] Save analysis as `analysisDDMMYYYY.md`
 - [ ] Update prediction history log
 - [ ] Update allocation recommendation log
 - [ ] Update key events timeline
@@ -412,9 +412,9 @@ weekly_bitcoin_analysis/
 ├── prompt.md                    # Main analysis prompt template
 ├── analysis_tracking.md         # Tracking log and variables
 ├── weekly_workflow.md          # This file - workflow guide
-├── analysis12042025.md         # Week 1 analysis
-├── analysis12112025.md         # Week 2 analysis
-├── analysis12182025.md         # Week 3 analysis
+├── analysis04122025.md         # Week 1 (04 Dec 2025)
+├── analysis11122025.md         # Week 2 (11 Dec 2025)
+├── analysis18122025.md         # Week 3 (18 Dec 2025)
 └── ...                         # Additional weekly analyses
 ```
 
