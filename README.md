@@ -73,15 +73,22 @@ Risk: If < $80K reduce to 50%; > $120K trim to 60%; > $150K trim to 40%.
 
 ## 🚀 Quick Start
 
-> **👉 New here? Read `START_HERE.md` for a 2-minute quick start guide!**
+> **👉 BRAND NEW? Read [`START_HERE.md`](START_HERE.md) first - it's a 2-minute guide!**
+
+### What This System Does
+
+This is an **AI-automated Bitcoin analysis system**:
+- **You:** Copy one file (`run_weekly_analysis.md`) into an AI assistant weekly
+- **AI:** Gathers all data, generates analysis, updates tracking, saves everything
+- **Time:** 10-15 minutes per week
+- **Result:** Complete market analysis + portfolio recommendations
 
 ### First-Time Setup (5 minutes)
 
-1. **Understand the system**:
-   - This system automates weekly Bitcoin market analysis using AI
-   - You just copy one file (`run_weekly_analysis.md`) into an AI assistant
-   - AI does all the work: gathers data, analyzes, updates tracking
-   - Takes 10-15 minutes per week
+1. **Read the quick start guide**:
+   - Open **[`START_HERE.md`](START_HERE.md)** ← Your main onboarding guide
+   - Understand the 4-step weekly workflow
+   - Set up your Wednesday calendar reminder
 
 2. **Your baseline analysis is complete**: You have 3 weeks of data (Dec 4, 10, 17)
 
@@ -112,32 +119,31 @@ Every Wednesday:
 
 ```
 weekly_bitcoin_analysis/
-├── START_HERE.md                ← 🚀 Read this first!
+├── START_HERE.md                ← 🚀 READ THIS FIRST! (2-min quick start)
 ├── run_weekly_analysis.md       ← Your main file (copy/paste weekly)
-├── analysis_tracking.md         ← Auto-updated by AI
+├── analysis_tracking.md         ← Auto-updated by AI (view history)
 ├── prompt.md                    ← Backend (AI reads this, you don't touch)
 ├── README.md                    ← This file (full documentation)
-├── QUICK_START.md              ← Quick reference guide
 ├── WARP.md                      ← Repository guidance
 ├── analysis04122025.md          ← Week 1 analysis
 ├── analysis12102025.md          ← Week 2 analysis
 ├── analysis12172025.md          ← Week 3 analysis (latest)
 └── archive/
-    └── weekly_workflow.md       ← Manual process (for advanced users only)
+    └── weekly_workflow.md       ← Manual process (advanced users only)
 ```
 
 ---
 
 ## 🎯 Which File Do I Use?
 
-| File | When to Use | Who It's For |
-|------|-------------|--------------|
-| **START_HERE.md** | First time setup | Everyone (start here!) |
-| **run_weekly_analysis.md** | Every Wednesday | Everyone (your main file) |
-| **analysis_tracking.md** | View only | Auto-updated (review history) |
-| **README.md** | Reference | Full documentation |
-| **prompt.md** | Never | Backend (AI uses this) |
-| **archive/weekly_workflow.md** | Optional | Manual control enthusiasts |
+| File | When to Use | Who It's For | Action |
+|------|-------------|--------------|--------|
+| **[START_HERE.md](START_HERE.md)** | First time | Everyone | **Read this first!** (2 min) |
+| **run_weekly_analysis.md** | Every Wednesday | Everyone | Copy/paste to AI |
+| **analysis_tracking.md** | View history | Everyone | Just review (auto-updated) |
+| **README.md** | Need details | Reference | This file - full docs |
+| **prompt.md** | Never | AI only | Don't touch (backend) |
+| **archive/** | Optional | Advanced | Ignore (old files) |
 
 ---
 
@@ -368,7 +374,7 @@ This is a personal framework. Adapt it to your needs:
 8. ✅ Quality check and set reminders
 
 ### Key Files Quick Access
-- **🚀 NEW? START HERE**: `START_HERE.md` (2-minute guide)
+- **🚀 NEW? START HERE**: **[`START_HERE.md`](START_HERE.md)** ← Read this first! (2-minute guide)
 - **📋 Weekly Analysis**: `run_weekly_analysis.md` (copy/paste to AI every Wednesday)
 - **📊 View History**: `analysis_tracking.md` (auto-updated by AI)
 - **📖 Full Docs**: `README.md` (this file)
@@ -394,9 +400,8 @@ This is a personal framework. Adapt it to your needs:
 
 ## 📚 Additional Resources
 
-- **START_HERE.md** - Quick 2-minute guide for new users
-- **QUICK_START.md** - Fast reference
-- **WARP.md** - Repository guidance for developers
+- **[START_HERE.md](START_HERE.md)** - 2-minute quick start guide (read this first!)
+- **WARP.md** - Repository guidance for developers and AI assistants
 - **archive/** - Old manual workflows (advanced users only)
 
 ---
